@@ -1,6 +1,6 @@
 # PolyHome - Application de domotique
 
-PolyHome est une application Android permettant et de gérer des chalets domotiques de gérer les accès des utilisateurs.
+PolyHome est une application Android permettant de gérer des chalets domotiques et de gérer les accès des utilisateurs.
 
 ## Structure du projet
 
