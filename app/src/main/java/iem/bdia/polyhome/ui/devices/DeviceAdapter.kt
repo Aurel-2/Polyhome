@@ -11,7 +11,10 @@ import com.google.android.material.materialswitch.MaterialSwitch
 import iem.bdia.polyhome.R
 import iem.bdia.polyhome.domain.model.Device
 
-class DeviceAdapter(private val context: Context, private val onCommandSend: (deviceId: String, command: String) -> Unit ) : BaseAdapter() {
+class DeviceAdapter(
+    private val context: Context,
+    private val onCommandSend: (deviceId: String, command: String) -> Unit
+) : BaseAdapter() {
 
     private val dataSource: ArrayList<Device> = arrayListOf()
     private val inflater: LayoutInflater = LayoutInflater.from(context)
