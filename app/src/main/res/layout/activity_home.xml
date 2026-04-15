@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A1520"
+    tools:context=".ui.home.HomeActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingTop="48dp"
+            android:paddingBottom="40dp">
+
+            <TextView
+                android:id="@+id/tvMyHouseTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="@font/aldrich"
+                android:letterSpacing="0.10"
+                android:text="@string/home_title"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#29B6F6"
+                android:textSize="26sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnManageDevices"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/aldrich"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:letterSpacing="0.10"
+                android:text="@string/section_devices"
+                android:textColor="#C8DCF0"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:backgroundTint="#1E3348"
+                app:cornerRadius="12dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnManageAccess"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/aldrich"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:letterSpacing="0.10"
+                android:text="@string/grant_access"
+                android:textColor="#C8DCF0"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:backgroundTint="#1E3348"
+                app:cornerRadius="12dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogout"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="@font/aldrich"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:letterSpacing="0.10"
+                android:text="@string/logout"
+                android:textColor="#FF5252"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:backgroundTint="#1E3348"
+                app:cornerRadius="12dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="32dp"
+                android:background="#1A3A55" />
+
+            <TextView
+                android:id="@+id/tvSharedHousesTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/aldrich"
+                android:letterSpacing="0.10"
+                android:text="@string/section_other_homes"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#29B6F6"
+                android:textSize="15sp" />
+
+            <ListView
+                android:id="@+id/housesListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="12dp"
+                android:nestedScrollingEnabled="false"
+                tools:listitem="@layout/item_house" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

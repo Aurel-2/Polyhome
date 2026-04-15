@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- App -->
+    <string name="app_name">PolyHome</string>
+
+    <!-- Auth -->
+    <string name="email">Email</string>
+    <string name="password">Mot de passe</string>
+    <string name="login">Se connecter</string>
+    <string name="create_account">Créer un compte</string>
+    <string name="or">ou</string>
+
+    <!-- Général -->
+    <string name="logo">Logo</string>
+    <string name="home_title">Ma maison</string>
+    <string name="devices">Équipements</string>
+    <string name="no_devices">Aucun équipement trouvé</string>
+
+    <!-- Actions -->
+    <string name="logout">Déconnexion</string>
+    <string name="grant_access">Donner l\'accès</string>
+
+    <!-- Device -->
+    <string name="device_id">ID : %1$s</string>
+    <string name="device_opening">Ouverture : %1$d%%</string>
+    <string name="device_power">Puissance : %1$d%%</string>
+    <string name="device_status_unknown">Statut inconnu</string>
+
+    <!-- Device types -->
+    <string name="device_light">Lumière</string>
+    <string name="device_shutter">Volet</string>
+    <string name="device_garage">Porte de garage</string>
+
+    <!-- Commands -->
+    <string name="command_on">ON</string>
+    <string name="command_off">OFF</string>
+
+
+    <!-- Sections -->
+    <string name="section_devices">Gestion des équipements</string>
+    <string name="section_other_homes">Autres maisons accessibles</string>
+    <string name="house_members">Membres</string>
+    <string name="add_member">Ajouter un membre</string>
+    <string name="command_stop">STOP</string>
+    <string name="garage">Garage</string>
+    <string name="shutteer">Volets</string>
+    <string name="shutter">Volets\n</string>
+    <string name="light">Lumières</string>
+    <string name="all">Tous</string>
+    <string name="access">Avec accès</string>
+    <string name="no_access">Sans accès</string>
+
+</resources>

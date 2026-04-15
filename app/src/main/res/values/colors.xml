@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue_primary">#29B6F6</color>
+    <color name="blue_dark">#1A3A55</color>
+    <color name="switch_track_off">#3D6680</color>
+</resources>
